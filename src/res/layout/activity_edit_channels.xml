@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:tag="layout/activity_edit_channels_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/edit_channels_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+    <include android:id="@id/activity_edit_channels_options" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_below="@id/edit_channels_frame" layout="@layout/activity_edit_channels_extra" />
+</androidx.appcompat.widget.LinearLayoutCompat>

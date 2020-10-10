@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="224.0dip" android:layout_height="126.0dip" app:cardCornerRadius="2.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/details_overview_image_with_badge" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.alticelabs.meo.androidtv.common.presentation.ui.views.BadgeTextView android:layout_gravity="bottom" android:id="@id/details_overview_tag" android:background="@color/badge_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_badge_margin_top" app:badgeOrientation="leftToRight" app:badgeSize="extraBig" style="ProductDetailsBadge" />
+</androidx.cardview.widget.CardView>

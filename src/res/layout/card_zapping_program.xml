@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_layout" android:tag="layout/card_zapping_program_0" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivChannelLogo" android:tag="binding_1" android:paddingBottom="@dimen/player_zapping_thematic_program_logo_padding_bottom" android:layout_width="@dimen/player_zapping_thematic_program_logo_width" android:layout_height="@dimen/player_zapping_thematic_program_logo_height" android:contentDescription="@null" android:stateListAnimator="@animator/sl_invisible_on_deactivated_change_animator" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mainHolder" android:background="@color/black" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="wrap_content">
+        <FrameLayout android:background="@color/card_holder" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="@dimen/player_zapping_thematic_program_card_height">
+            <ImageView android:id="@id/main_image" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_badge_margin_top">
+                <com.alticelabs.meo.androidtv.common.presentation.ui.views.BadgeTextView android:layout_gravity="right" android:tag="binding_3" android:background="@color/badge_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/badge_live" app:badgeOrientation="rightToLeft" app:badgeSize="small" />
+                <com.alticelabs.meo.androidtv.common.presentation.ui.views.BadgeTextView android:layout_gravity="right" android:tag="binding_4" android:background="@color/badge_blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/badge_now" app:badgeOrientation="rightToLeft" app:badgeSize="small" />
+            </LinearLayout>
+            <SeekBar android:layout_gravity="bottom" android:id="@id/pb_program_progress" android:tag="binding_5" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="@dimen/card_progress_bar_height" style="@style/SeekBar" />
+        </FrameLayout>
+        <TextView android:id="@id/title_text" android:tag="binding_6" android:background="@color/black" android:paddingTop="@dimen/card_info_vertical_padding_top" android:layout_width="@dimen/player_zapping_thematic_program_card_width" android:layout_height="@dimen/card_info_height_small_single_line" android:stateListAnimator="@animator/sl_visible_on_activated_and_selected_change_animator" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/BaseTextAppearance.CardPrimaryText" />
+    </LinearLayout>
+</LinearLayout>

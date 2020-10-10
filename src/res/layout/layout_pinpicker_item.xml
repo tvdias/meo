@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center" android:id="@id/list_item" android:background="@drawable/pin_picker_item_background" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" style="@style/BaseTextAppearance.PinPicker"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

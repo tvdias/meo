@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:tag="layout/edit_zapping_title_view_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_zapping_title_view_margin_top">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/header_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center" android:id="@id/header_line" android:background="@drawable/header_line_right_to_left_black" android:layout_width="@dimen/edit_zapping_title_view_line_width" android:layout_height="@dimen/edit_zapping_title_view_line_height" android:layout_marginStart="@dimen/edit_zapping_title_view_line_margin_start" android:layout_marginEnd="@dimen/edit_zapping_title_view_line_margin_end" />
+            <TextView android:textSize="34.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed" style="?browseTitleTextStyle" />
+        </LinearLayout>
+        <TextView android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_zapping_instruction" android:layout_below="@id/header_container" android:layout_alignRight="@id/header_container" style="@style/EditZappingInstructionTextStyle" />
+        <androidx.leanback.widget.SearchOrbView android:layout_gravity="start|center" android:id="@id/title_orb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionGroup="true" />
+    </RelativeLayout>
+</merge>

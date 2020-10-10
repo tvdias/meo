@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/edit_zapping_black_background_start_color" android:endColor="@color/edit_zapping_black_background_end_color" android:angle="180.0" android:type="linear" />
+    <size android:height="120.0dip" android:width="416.0dip" />
+</shape>

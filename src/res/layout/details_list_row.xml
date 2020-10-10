@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/details_list_row_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lb="http://schemas.android.com/apk/res-auto">
+    <androidx.leanback.widget.HorizontalGridView android:id="@id/row_content" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" lb:rowHeight="wrap_content" style="?rowHorizontalGridStyle" />
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:layout_marginStart="312.0dip" android:layout_marginEnd="48.0dip">
+        <TextView android:textSize="24.0sp" android:textColor="@color/black" android:id="@id/movie_title" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif" />
+        <TextView android:textColor="@color/very_dark_grey" android:id="@id/details" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+        <TextView android:textColor="@color/black" android:ellipsize="end" android:id="@id/sinopse" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:maxLines="4" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

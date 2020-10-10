@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/exo_subtitles_holder" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.exoplayer2.ui.SubtitleView android:id="@id/exo_subtitles" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <RelativeLayout android:id="@id/errorContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageError" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mountain_broken_painting" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/errorTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/TextAppearance.AppCompat.Title" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/fragmentTrackSelectionContainer" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</FrameLayout>

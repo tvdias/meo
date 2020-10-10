@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_details_vod_related_0" android:layout_width="@dimen/vod_portrait_card_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/program_poster" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/vod_portrait_card_height" style="@style/DetailsRelatedImageStyle" />
+    <RelativeLayout android:id="@id/info_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/card_related_infofield_height">
+        <TextView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/card_episode_infofield_margin_left" style="@style/DetailsEpisodeTitleStyle" />
+    </RelativeLayout>
+</LinearLayout>

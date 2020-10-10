@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.alticelabs.meo.androidtv" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="true"/>
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/app_banner" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/app_banner" android:name="com.alticelabs.meo.androidtv.BaseApp" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:banner="@drawable/app_banner" android:excludeFromRecents="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:launchMode="singleInstance" android:logo="@drawable/app_banner" android:name="com.alticelabs.meo.androidtv.features.splash.ui.SplashActivity" android:noHistory="true" android:screenOrientation="landscape" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.alticelabs.meo.androidtv.features.main.MainActivity" android:parentActivityName="com.alticelabs.meo.androidtv.features.splash.ui.SplashActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.MainTitleView"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.thematics.ui.ThematicActivity" android:theme="@style/AppTheme.Thematic"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.thematicscategory.ui.ThematicsCategoryActivity" android:theme="@style/AppTheme.Thematic.Category"/>
+        <activity android:exported="true" android:name="com.alticelabs.meo.androidtv.features.sidemenu.ui.SideMenuActivity" android:theme="@style/SideMenuTheme"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.recordings.ui.RecordingsChannelProgramsActivity" android:theme="@style/AppTheme.Recordings.ChannelPrograms.TitleView"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.details.ui.DetailsActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.voddetails.ui.VodDetailsActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.alticelabs.meo.androidtv.features.playback.ondemand.ui.OnDemandPlayerActivity" android:resizeableActivity="true" android:supportsPictureInPicture="true"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.premiumchannels.ui.PremiumChannelsActivity" android:theme="@style/AppTheme.PremiumChannelsTheme"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.channelsearch.ui.ChannelSearchActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.productbundles.ui.ProductBundleActivity" android:theme="@style/AppTheme.MainTitleView"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.productdetails.ui.ProductDetailsActivity"/>
+        <activity android:exported="true" android:name="com.alticelabs.meo.androidtv.features.settings.ui.PreferencesActivity" android:theme="@style/SettingsSideMenuTheme"/>
+        <activity android:exported="true" android:name="com.alticelabs.meo.androidtv.features.pinpicker.PinPickerActivity" android:theme="@style/PinPicker"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.settings.ui.TermsAndConditionsActivity" android:theme="@style/AppTheme.TermsAndConditions"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.search.ui.SearchActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.vodrentwizard.ui.VodRentWizardActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.wizard.ui.WizardActivity" android:noHistory="true"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.productdetails.ui.MoreInfoActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.videoclubcategory.ui.VideoClubCategoryActivity" android:theme="@style/AppTheme.VideoClub.Category"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.productdetails.ui.ProductActionActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.channeldetails.ui.ChannelDetailsActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.deeplink.DeepLinkActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ottapp"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alticelabs.meo.androidtv.features.nonesubscribe.ui.NoneSubscribeActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.editzapping.ui.EditZappingActivity" android:theme="@style/AppTheme.EditZapping"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.editzapping.ui.EditZappingResetOrderConfirmationActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.editzapping.ui.EditZappingFavoriteThematicsActivity" android:theme="@style/EditZappingFavoriteThematicsTheme"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.editchannels.ui.EditChannelsActivity" android:theme="@style/AppTheme.EditChannels"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.editchannels.ui.EditChannelsResetOrderConfirmationActivity"/>
+        <activity android:name="com.alticelabs.meo.androidtv.features.onboarding.OnboardingActivity"/>
+        <provider android:authorities="com.alticelabs.meo.androidtv.workmanager-init" android:directBootAware="false" android:enabled="false" android:exported="false" android:multiprocess="true" android:name="androidx.work.impl.WorkManagerInitializer"/>
+        <receiver android:exported="true" android:name="com.alticelabs.meo.androidtv.features.homescreen.receivers.BootAndLauncherReceiver">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.media.tv.action.INITIALIZE_PROGRAMS"/>
+                <action android:name="android.media.tv.action.PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT"/>
+                <action android:name="android.media.tv.action.PREVIEW_PROGRAM_BROWSABLE_DISABLED"/>
+                <action android:name="android.media.tv.action.WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="99d68db9e870d11569692c582d95f249"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ms_square.debugoverlay.DebugOverlayService"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.alticelabs.meo.androidtv.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.alticelabs.meo.androidtv.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

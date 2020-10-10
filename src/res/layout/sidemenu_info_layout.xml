@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/sidemenu_info_layout_0" android:layout_width="@dimen/lb_settings_pane_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/program_poster_container" android:layout_width="232.0dip" android:layout_height="130.0dip" android:layout_marginTop="27.0dip" android:layout_marginStart="30.0dip" app:cardBackgroundColor="@color/card_holder" app:cardCornerRadius="2.0dip" app:cardElevation="3.0dip">
+        <ImageView android:id="@id/program_poster" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@id/program_title" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/program_poster_container" android:layout_marginStart="30.0dip" android:layout_marginEnd="48.0dip" style="@style/SideMenuInfoTitle" />
+    <TextView android:id="@id/program_info" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/program_title" android:layout_marginStart="30.0dip" android:layout_marginEnd="48.0dip" style="@style/SideMenuInfoContentTitleSmall" />
+    <ScrollView android:id="@id/program_sinopse_container" android:layout_width="fill_parent" android:layout_height="171.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/program_info" android:layout_marginStart="30.0dip" android:layout_marginEnd="48.0dip" style="@style/SideMenuInfoScrollView">
+        <FrameLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/program_sinopse" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SideMenuInfoContentInformation" />
+        </FrameLayout>
+    </ScrollView>
+    <Button android:id="@id/program_more_info" android:tag="binding_5" android:layout_width="232.0dip" android:layout_height="40.0dip" android:layout_marginBottom="27.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="30.0dip" style="@style/DetailsActionButtonStyle" />
+</RelativeLayout>

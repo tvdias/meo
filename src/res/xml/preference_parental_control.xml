@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_title_parental_control"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/pref_title_pin_purchase" android:key="@string/pref_key_pin_purchase" android:summary=" " android:defaultValue="true" android:disableDependentsState="false" />
+    <Preference android:title="@string/pref_title_edit_pin_purchase" android:key="@string/pref_key_edit_pin_purchase" android:summary="@string/pref_summary_edit_zapping" android:dependency="@string/pref_key_pin_purchase" />
+    <ListPreference android:entries="@array/pref_parent_control_entries" android:title="@string/pref_title_content_restrictions" android:key="@string/pref_key_content_restrictions" android:defaultValue="M3" android:entryValues="@array/pref_parent_control_entries_values" />
+</PreferenceScreen>

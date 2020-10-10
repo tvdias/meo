@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_reset_zapping_options_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stateListAnimator="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/confirm_reset_button" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/edit_zapping_fragment_reset_button_margin" android:layout_above="@id/middle" android:layout_centerHorizontal="true" style="@style/EditZappingResetOrderButton" />
+    <View android:id="@id/middle" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <Button android:id="@id/cancel_reset_button" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_zapping_fragment_reset_button_margin" android:layout_below="@id/middle" android:layout_centerHorizontal="true" style="@style/EditZappingResetOrderButton" />
+</RelativeLayout>

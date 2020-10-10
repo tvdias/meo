@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/relative_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/guidance_icon" android:layout_width="188.0dip" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/program_poster" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_mindless_zapping_current_channel" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:id="@id/guidance_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:id="@id/guidance_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:gravity="center" android:id="@id/guidance_breadcrumb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

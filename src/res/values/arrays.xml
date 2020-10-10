@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_parent_control_entries">
+        <item>M18</item>
+        <item>M16</item>
+        <item>M14</item>
+        <item>M12</item>
+        <item>M6</item>
+        <item>M4</item>
+        <item>M3</item>
+    </string-array>
+    <string-array name="pref_parent_control_entries_values">
+        <item>M18</item>
+        <item>M16</item>
+        <item>M14</item>
+        <item>M12</item>
+        <item>M6</item>
+        <item>M4</item>
+        <item>M3</item>
+    </string-array>
+</resources>

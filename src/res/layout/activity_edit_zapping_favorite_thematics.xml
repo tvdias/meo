@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/activity_edit_zapping_favorite_thematics_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/edit_zapping_favorite_thematics_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

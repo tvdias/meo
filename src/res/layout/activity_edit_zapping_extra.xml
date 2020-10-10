@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_edit_zapping_extra_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/edit_zapping_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/instruction_text_view" android:layout_centerHorizontal="true">
+        <Button android:id="@id/edit_zapping_option_reset_order_button" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="@dimen/edit_zapping_option_button_height" style="@style/EditZappingOptionButton" />
+        <Button android:id="@id/edit_zapping_option_favorite_thematics_button" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="@dimen/edit_zapping_option_button_height" android:layout_marginLeft="@dimen/edit_zapping_option_buttons_space" android:layout_toRightOf="@id/edit_zapping_option_reset_order_button" style="@style/EditZappingOptionButton" />
+    </RelativeLayout>
+    <TextView android:id="@id/instruction_text_view" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_zapping_small_instruction_text_margin_top" android:layout_marginBottom="@dimen/edit_zapping_small_instruction_text_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/EditZappingInstructionTextStyleSmallerText" />
+</RelativeLayout>

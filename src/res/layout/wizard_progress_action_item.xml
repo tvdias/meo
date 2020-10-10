@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.NonOverlappingLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="?guidedActionItemContainerStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:indeterminate="false" android:indeterminateTint="@color/blue" android:indeterminateTintMode="src_in" style="?android:progressBarStyle" />
+    <androidx.leanback.widget.NonOverlappingLinearLayout android:id="@id/guidedactions_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?guidedActionItemContentStyle">
+        <TextView android:id="@id/guidedactions_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/videoclub_rent_wizard_processing" style="?guidedActionItemTitleStyle" />
+    </androidx.leanback.widget.NonOverlappingLinearLayout>
+</androidx.leanback.widget.NonOverlappingLinearLayout>

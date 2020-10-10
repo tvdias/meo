@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/timebrowsing_programs_list_row_0" android:layout_width="fill_parent" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lb="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/player_zapping_thematics_programs_row_background_color" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+    <androidx.leanback.widget.HorizontalGridView android:id="@id/time_browsing_row_content" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" lb:rowHeight="wrap_content" style="?rowHorizontalGridStyle" />
+    <ProgressBar android:id="@id/time_browsing_progressBar" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:indeterminateTint="@color/blue" />
+    <TextView android:id="@id/time_browsing_error_text" android:tag="binding_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="140.0dip" android:layout_centerHorizontal="true" style="@style/TimeBrowsingErrorTextStyle" />
+</RelativeLayout>

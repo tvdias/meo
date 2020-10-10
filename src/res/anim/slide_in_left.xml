@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:duration="@integer/mindless_zapping_translate_anim_dur_ms" android:fromXDelta="-100.0%" android:toXDelta="0.0%" />
+    <alpha android:duration="@integer/mindless_zapping_alpha_anim_dur_ms" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

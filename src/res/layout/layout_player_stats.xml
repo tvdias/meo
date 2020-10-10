@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/player_stats_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#c0000000" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/player_stats_speed_chart" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/player_stats_health_chart" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/player_stats_nw_chart" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/player_stats_dropframes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dropped Frames: " />
+    </LinearLayout>
+</ScrollView>

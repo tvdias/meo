@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/card_search_vods_0" android:layout_width="@dimen/vod_portrait_card_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/card_holder" android:background="@color/card_holder" android:layout_width="@dimen/vod_portrait_card_width" android:layout_height="@dimen/vod_portrait_card_height" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/vod_poster" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/vod_portrait_card_height" style="@style/DetailsRelatedImageStyle" />
+            <TextView android:tag="binding_2" android:paddingTop="@dimen/card_info_vertical_padding_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/card_info_height_small_single_line" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/BaseTextAppearance.CardPrimaryText" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

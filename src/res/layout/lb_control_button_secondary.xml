@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/lb_control_button_secondary_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/button" android:layout_width="@dimen/lb_control_button_secondary_diameter" android:layout_height="@dimen/lb_control_button_secondary_height" android:src="@drawable/lb_control_button_secondary" android:scaleType="center" style="?playbackControlsButtonStyle" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/lb_control_icon_width" android:layout_height="@dimen/lb_control_icon_height" />
+    <ImageView android:layout_gravity="center" android:id="@id/button_rectangle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/player_rectangle_button_height" android:src="@drawable/bg_player_control_button_rectangle" android:scaleType="center" android:minWidth="@dimen/player_rectangle_button_width" style="?playbackControlsButtonStyle" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/label" android:background="@drawable/bg_player_control_button_text" android:layout_width="wrap_content" android:layout_height="@dimen/player_rectangle_button_text_height" style="@style/PlayerButtonTextAppearance" />
+</FrameLayout>

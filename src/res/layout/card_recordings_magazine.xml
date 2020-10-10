@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/card_recordings_magazine_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/card_holder" android:background="@color/card_holder" android:layout_width="@dimen/card_magazine_width" android:layout_height="@dimen/card_magazine_image_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/program_poster" android:tag="binding_1" android:layout_width="@dimen/card_magazine_width" android:layout_height="@dimen/card_magazine_image_height" style="@style/DetailsRelatedImageStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/info_field" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/card_info_height_small" android:minHeight="@dimen/card_magazine_infofield_height">
+            <TextView android:ellipsize="none" android:id="@id/title_text" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_magazine_title_margin_top" android:layout_marginStart="@dimen/card_magazine_title_margin_start" android:layout_marginEnd="@dimen/card_magazine_title_margin_end" style="@style/MagazineTitleStyle" />
+            <TextView android:id="@id/content_text" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_magazine_info_margin_bottom" android:layout_marginStart="@dimen/card_magazine_info_margin_start" android:layout_marginEnd="@dimen/card_magazine_info_margin_end" style="@style/MagazineInfoContentStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

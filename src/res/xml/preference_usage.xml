@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_title_usage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_title_edit_zapping" android:key="@string/pref_key_edit_zapping" android:summary="@string/pref_summary_edit_zapping" />
+    <Preference android:title="@string/pref_title_edit_channels" android:key="@string/pref_key_edit_channels" />
+    <SwitchPreference android:title="@string/pref_title_recordings" android:key="@string/pref_key_recordings" android:defaultValue="true" android:summaryOn="@string/pref_summary_on_recordings" android:summaryOff="@string/pref_summary_off_recordings" />
+</PreferenceScreen>

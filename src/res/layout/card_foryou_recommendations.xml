@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/card_foryou_recommendations_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/card_holder" android:background="@color/card_holder" android:layout_width="@dimen/foryou_recommendations_card_width" android:layout_height="@dimen/foryou_recommendations_card_image_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/main_image" android:tag="binding_1" android:layout_width="@dimen/foryou_recommendations_card_width" android:layout_height="@dimen/foryou_recommendations_card_image_height" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:tag="binding_2" android:paddingTop="@dimen/card_info_vertical_padding_top" android:paddingBottom="@dimen/card_info_vertical_padding_bottom" android:visibility="gone" android:layout_width="@dimen/foryou_recommendations_card_width" android:layout_height="@dimen/card_info_height_small" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small">
+            <TextView android:ellipsize="none" android:id="@id/title_text" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseTextAppearance.CardPrimaryText" />
+            <TextView android:id="@id/content_text" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseTextAppearance.CardSecondaryText" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

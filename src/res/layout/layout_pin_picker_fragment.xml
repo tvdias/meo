@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="@dimen/pinpicker_card_width" android:layout_height="@dimen/pinpicker_card_height" app:cardBackgroundColor="@color/grey" app:cardCornerRadius="@dimen/pinpicker_card_radius"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_gravity="center" android:id="@id/pinPickerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pinpicker_title_margin_top" android:text="@string/pin_picker_title" android:layout_centerHorizontal="true" style="@style/BaseTextAppearance.PinPickerTitle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pinPickerTitle">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBarContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+            <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:id="@id/pinPickerContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:layout_gravity="center" android:id="@id/pinPickerDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pinpicker_title_margin_top" style="@style/BaseTextAppearance.Body.PinPickerDescription" />
+                <androidx.leanback.widget.picker.PinPicker android:layout_gravity="center" android:id="@id/pinPicker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pinpicker_margin_top" android:layout_marginBottom="@dimen/pinpicker_margin_bottom">
+                    <requestFocus />
+                </androidx.leanback.widget.picker.PinPicker>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

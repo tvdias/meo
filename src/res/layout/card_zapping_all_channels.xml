@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/card_zapping_all_channels_0" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="@dimen/player_zapping_thematic_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@id/title_text" android:tag="binding_1" android:focusable="true" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/player_zapping_thematic_card_button_height" android:textAlignment="center" android:layout_marginHorizontal="@dimen/player_zapping_thematic_card_button_margin_hotizontal" android:layout_marginVertical="@dimen/player_zapping_thematic_card_button_margin_vertical" style="@style/DetailsActionButtonStyle.Zapping" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/divider" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="@dimen/player_zapping_thematic_divider_height" android:layout_marginLeft="@dimen/player_zapping_thematic_card_space" android:src="@drawable/divider_zapping_vertical_gradient" />
+</LinearLayout>

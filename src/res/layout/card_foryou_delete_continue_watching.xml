@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_foryou_delete_continue_watching_0" android:background="@color/light_grey" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="@dimen/foryou_continue_watching_card_width" android:layout_height="@dimen/foryou_continue_watching_card_image_height">
+        <ImageView android:id="@id/main_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/ic_trash" android:scaleType="fitCenter" android:tint="@color/black" />
+    </RelativeLayout>
+    <FrameLayout android:tag="binding_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/channel_dummy_text" android:tag="binding_2" android:background="@color/black" android:paddingTop="@dimen/card_info_vertical_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/card_info_height_small_single_line" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/ForYouDeleteContinueWatchingText" />
+        <View android:background="@color/white_25" android:layout_width="fill_parent" android:layout_height="@dimen/card_separator_height" />
+    </FrameLayout>
+</LinearLayout>

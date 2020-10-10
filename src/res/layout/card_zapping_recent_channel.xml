@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_zapping_recent_channel_0" android:layout_width="@dimen/player_zapping_thematic_channel_logo_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_horizontal" android:id="@id/ivChannelLogo" android:paddingBottom="@dimen/player_zapping_thematic_program_logo_padding_bottom" android:layout_width="@dimen/player_zapping_thematic_program_logo_width" android:layout_height="@dimen/player_zapping_thematic_program_logo_height" android:stateListAnimator="@animator/sl_invisible_on_deactivated_change_animator" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/player_zapping_thematic_channel_logo_height">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" bind:cardBackgroundColor="@color/light_grey">
+            <ImageView android:id="@id/channel_poster" android:tag="binding_1" android:layout_width="@dimen/player_zapping_thematic_channel_logo_width" android:layout_height="@dimen/player_zapping_thematic_channel_logo_height" android:scaleType="fitCenter" android:paddingHorizontal="@dimen/player_zapping_thematic_channel_logo_horizontal_padding" android:paddingVertical="@dimen/player_zapping_thematic_channel_logo_vertical_padding" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/titleHolder" android:background="@color/transparent" android:paddingTop="@dimen/card_info_vertical_padding_top" android:paddingBottom="@dimen/card_info_vertical_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@animator/sl_visible_on_activated_change_animator" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small">
+        <TextView android:id="@id/title_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="dummmy" style="@style/BaseTextAppearance.CardPrimaryText" />
+    </LinearLayout>
+</LinearLayout>

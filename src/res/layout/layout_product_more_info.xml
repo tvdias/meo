@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip">
+        <TextView android:textSize="34.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed" android:layout_marginStart="48.0dip" style="?browseTitleTextStyle" />
+        <View android:layout_gravity="center" android:id="@id/header_line" android:background="@drawable/header_line_left_to_right_black" android:visibility="visible" android:layout_width="300.0dip" android:layout_height="2.0dip" android:layout_marginStart="19.0dip" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+    <FrameLayout android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="92.0dip">
+        <TextView android:id="@id/more_info_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="48.0dip" android:layout_marginEnd="372.0dip" style="@style/TermsAndConditionsInformation" />
+    </FrameLayout>
+</RelativeLayout>

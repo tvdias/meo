@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_product_details_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/details_information_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DetailsContentTitle" />
+    <TextView android:id="@id/price" android:tag="binding_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ProductDetailsPrice" />
+    <TextView android:id="@id/duration_min_or_subscribe" android:tag="binding_3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DetailsContentTitleSmall" />
+    <TextView android:ellipsize="end" android:id="@id/sinopse" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/DetailsContentInformation" />
+    <Button android:id="@id/view_more_button" android:tag="binding_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginBottom="40.0dip" android:lines="1" android:includeFontPadding="false" style="@style/DetailsActionButtonStyle.ViewMore" />
+</LinearLayout>

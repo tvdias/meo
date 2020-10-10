@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/card_search_programs_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/card_holder" android:background="@color/card_holder" android:layout_width="@dimen/search_programs_card_width" android:layout_height="@dimen/search_programs_card_image_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/program_poster" android:tag="binding_1" android:layout_width="@dimen/search_programs_card_width" android:layout_height="@dimen/search_programs_card_image_height" style="@style/DetailsRelatedImageStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/info_field" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/card_info_height_small">
+            <TextView android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="@style/BaseTextAppearance.CardPrimaryText" />
+            <TextView android:id="@id/content_text" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" style="@style/BaseTextAppearance.CardSecondaryText" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

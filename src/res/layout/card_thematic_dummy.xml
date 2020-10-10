@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/card_thematic_dummy_0" android:layout_width="192.0dip" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:tag="binding_1" android:layout_width="98.0dip" android:layout_height="wrap_content" style="@style/ThematicDummyTextOneStyle" />
+        <TextView android:tag="binding_2" android:layout_width="98.0dip" android:layout_height="wrap_content" style="@style/ThematicDummyTextTwoStyle" />
+    </LinearLayout>
+    <ImageView android:layout_width="@dimen/foryou_my_channels_all_channels_card_image_width" android:layout_height="@dimen/foryou_my_channels_all_channels_card_image_height" android:src="@drawable/ic_arrows_left_to_right" android:tint="@color/black" />
+</LinearLayout>

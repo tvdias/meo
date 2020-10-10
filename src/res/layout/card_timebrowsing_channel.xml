@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/card_timebrowsing_channel_0" android:clickable="false" android:layout_width="@dimen/player_timebrowsing_channels_card_width" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/channel_logo" android:tag="binding_1" android:focusable="true" android:layout_width="90.0dip" android:layout_height="@dimen/player_timebrowsing_channels_card_height" android:scaleType="fitCenter" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_cast_members_0" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cast_poster" android:tag="binding_1" android:background="@drawable/cast_member_background" android:layout_width="117.0dip" android:layout_height="117.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitCenter" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+        <TextView android:gravity="center" android:id="@id/cast_monogram" android:tag="binding_2" android:layout_width="117.0dip" android:layout_height="117.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" style="@style/DetailsCastMemberTitleStyle" />
+    </FrameLayout>
+    <TextView android:id="@id/cast_member_name" android:tag="binding_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DetailsCastMemberNameStyle" />
+    <TextView android:id="@id/cast_member_type" android:tag="binding_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DetailsCastMemberTypeStyle" />
+</LinearLayout>

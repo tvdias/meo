@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/card_foryou_featured_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/card_holder" android:tag="binding_1" android:background="@color/card_holder" android:visibility="visible" android:layout_width="@dimen/foryou_featured_card_width" android:layout_height="@dimen/foryou_featured_card_image_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/exo_content_frame" android:layout_width="@dimen/foryou_featured_card_width" android:layout_height="@dimen/foryou_featured_card_image_height" app:resize_mode="fixed_height">
+                <TextureView android:id="@id/playerSurface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+            <ImageView android:id="@id/main_image" android:tag="binding_2" android:layout_width="@dimen/foryou_featured_card_width" android:layout_height="@dimen/foryou_featured_card_image_height" android:scaleType="fitXY" android:contentDescription="@null" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:tag="binding_3" android:background="@drawable/sl_dw_color_grey_black" android:visibility="gone" android:layout_width="@dimen/foryou_featured_card_width" android:layout_height="@dimen/foryou_featured_card_info_height" android:paddingHorizontal="@dimen/card_info_horizontal_padding_big" android:paddingVertical="@dimen/card_info_vertical_padding_big">
+            <TextView android:id="@id/content_text" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseTextAppearance.CardSecondaryText" />
+            <TextView android:id="@id/title_text" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FeaturedContentTextAppearance" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

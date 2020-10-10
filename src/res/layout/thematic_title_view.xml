@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start" android:id="@id/header_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0">
+        <TextView android:textSize="34.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif" style="?browseTitleTextStyle" />
+        <View android:layout_gravity="center" android:id="@id/header_line" android:background="@drawable/header_line_left_to_right_black" android:layout_width="300.0dip" android:layout_height="2.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="100.0dip" />
+    </LinearLayout>
+    <androidx.leanback.widget.SearchOrbView android:layout_gravity="start|center" android:id="@id/title_orb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionGroup="true" />
+</merge>

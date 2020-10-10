@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/pref_title_about"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_title_terms_conditions" android:key="@string/pref_key_terms_conditions" />
+    <Preference android:title="@string/pref_title_id_box" android:selectable="false" android:key="@string/pref_key_id_box" />
+    <Preference android:title="@string/pref_title_version" android:selectable="false" android:key="@string/pref_key_version" />
+</PreferenceScreen>

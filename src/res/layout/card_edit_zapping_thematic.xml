@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_edit_zapping_thematic_0" android:layout_width="@dimen/edit_zapping_thematic_card_width" android:layout_height="@dimen/edit_zapping_thematic_card_plus_card_info_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/edit_zapping_thematic_card_width" android:layout_height="@dimen/edit_zapping_thematic_card_height">
+        <TextView android:id="@id/tv_title" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ThematicCardTitleTextAppearance.ExtraBig" />
+        <ImageView android:tag="binding_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/edit_zapping_thematics_background" android:scaleType="fitXY" android:contentDescription="@null" />
+        <TextView android:tag="binding_3" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ThematicCardTitleTextAppearance.ExtraBig" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:tag="binding_4" android:layout_width="@dimen/edit_zapping_thematic_card_zapping_order_circle_diameter" android:layout_height="@dimen/edit_zapping_thematic_card_zapping_order_circle_diameter" android:layout_marginTop="@dimen/edit_zapping_thematic_card_zapping_order_circle_margin" android:layout_marginRight="@dimen/edit_zapping_thematic_card_zapping_order_circle_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/title_text" android:tag="binding_5" android:background="@color/black" android:paddingTop="@dimen/card_info_vertical_padding_top" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/card_info_height_small_single_line" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/ThematicCardTitleTextAppearance" />
+</LinearLayout>

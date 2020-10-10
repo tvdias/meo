@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:tag="layout/activity_edit_channels_reset_order_confirmation_0" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:orientation="vertical" android:id="@id/left_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="@dimen/edit_channels_fragment_side_panel_width" android:layout_height="fill_parent" android:elevation="@dimen/edit_channels_fragment_reset_order_confirmation_elevation" android:outlineProvider="bounds">
+        <FrameLayout android:id="@id/right_fragment" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

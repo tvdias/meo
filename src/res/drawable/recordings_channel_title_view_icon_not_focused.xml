@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/very_dark_grey" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="1.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/light_grey" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_calendar_black" android:left="12.0dip" android:top="12.0dip" android:right="12.0dip" android:bottom="12.0dip" />
+</layer-list>

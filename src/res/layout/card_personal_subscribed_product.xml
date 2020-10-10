@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/card_personal_subscribed_product_0" android:layout_width="@dimen/card_subscribed_products_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/subscribed_product__poster" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/card_subscribed_products_image_height" />
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:id="@id/title" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_info_vertical_padding_top" android:singleLine="true" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/CatalogTitleStyle" />
+    <TextView android:ellipsize="end" android:id="@id/subtitle" android:tag="binding_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_info_vertical_padding_bottom" android:singleLine="true" android:paddingHorizontal="@dimen/card_info_horizontal_padding_small" style="@style/CatalogInfoContentStyle" />
+</LinearLayout>

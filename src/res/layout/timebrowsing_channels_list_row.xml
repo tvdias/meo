@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/timebrowsing_channels_list_row_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lb="http://schemas.android.com/apk/res-auto">
+    <View android:gravity="center" android:layout_gravity="center" android:id="@id/background" android:tag="binding_1" android:background="@drawable/btn_timebrowsing_channel_focused" android:visibility="visible" android:layout_width="@dimen/player_timebrowsing_channels_card_width" android:layout_height="@dimen/player_timebrowsing_channels_card_height" android:scaleType="fitCenter" android:elevation="3.0dip" />
+    <androidx.leanback.widget.HorizontalGridView android:layout_gravity="center" android:id="@id/time_browsing_row_content" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/player_timebrowsing_channels_card_height" android:translationZ="4.0dip" lb:rowHeight="wrap_content" style="?rowHorizontalGridStyle" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="70.0dip" android:translationZ="4.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/channels_left_arrow" android:tag="binding_2" android:layout_width="@dimen/player_timebrowsing_channels_card_arrow_width" android:layout_height="@dimen/player_timebrowsing_channels_card_arrow_width" android:src="@drawable/ic_arrow_left_black" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:tag="binding_3" android:visibility="invisible" android:layout_width="@dimen/player_timebrowsing_channels_card_width" android:layout_height="@dimen/player_timebrowsing_channels_card_height">
+            <ImageView android:layout_width="15.0dip" android:layout_height="fill_parent" android:src="@drawable/half_circle_left" android:layout_alignParentStart="true" />
+            <ImageView android:layout_width="15.0dip" android:layout_height="fill_parent" android:src="@drawable/half_circle_right" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/channels_right_arrow" android:tag="binding_4" android:layout_width="@dimen/player_timebrowsing_channels_card_arrow_width" android:layout_height="@dimen/player_timebrowsing_channels_card_arrow_width" android:src="@drawable/ic_arrow_right_black" />
+    </LinearLayout>
+    <View android:id="@id/channelsHideView" android:background="@color/player_zapping_thematics_row_background_color" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+</FrameLayout>
