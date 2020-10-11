@@ -179,18 +179,23 @@
     .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const-string p1, "NVIDIA"
     iput-object p1, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->manufacturerName:Ljava/lang/String;
 
+    const-string p2, "SHIELD Android TV"
     iput-object p2, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->model:Ljava/lang/String;
 
     iput-object p3, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->deviceType:Ljava/lang/String;
 
+    const-string p4, "9.0.0"
     iput-object p4, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->systemVersion:Ljava/lang/String;
 
+    const-string p5, "28"
     iput-object p5, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->apiLevel:Ljava/lang/String;
 
     iput-object p6, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->androidSecPatchLevel:Ljava/lang/String;
 
+    const p7, false
     iput-boolean p7, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->rootedDevice:Z
 
     iput-object p8, p0, Lcom/alticelabs/meo/androidtv/data/model/authentication/DeviceInfo;->buildId:Ljava/lang/String;
